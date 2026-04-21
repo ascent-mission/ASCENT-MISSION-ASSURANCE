@@ -1,0 +1,10 @@
+# Ascent Mission Assurance LLC - Robots Configuration
+User-agent: *
+Allow: /
+
+# Direct crawlers to the Sitemap for faster indexing
+Sitemap: https://www.ascent-ma.com/sitemap.xml
+
+# Prevent indexing of temporary or draft files (if you add them later)
+Disallow: /drafts/
+Disallow: /private/
