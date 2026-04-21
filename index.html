@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent Mission Assurance LLC | Aerospace Program Oversight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0d1f3c;
+            --gold: #b8860b;
+            --white: #ffffff;
+            --off-white: #f8f9fa;
+            --text: #1a1a1a;
+            --gray: #4a4a4a;
+            --border: #d8d4cc;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
+        h1, h2, .logo { font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* HEADER */
+        nav { background: var(--navy); padding: 1.5rem 4rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--gold); }
+        .logo { color: var(--white); font-size: 1.2rem; font-weight: 700; }
+        .nav-btn { background: var(--gold); color: var(--navy); padding: 0.8rem 1.5rem; text-decoration: none; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
+
+        /* HERO */
+        .hero { background: var(--navy); color: var(--white); padding: 6rem 4rem; text-align: left; }
+        .hero-inner { max-width: 1100px; margin: 0 auto; }
+        h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 1.5rem; }
+        .hero-sub { font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 700px; margin-bottom: 2rem; }
+
+        /* LOGIC BAR */
+        .logic-bar { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 3rem 4rem; }
+        .logic-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .logic-item b { font-size: 2.5rem; color: var(--navy); display: block; }
+        .logic-item span { font-size: 0.9rem; text-transform: uppercase; color: var(--gray); font-weight: 600; }
+
+        /* CAPABILITIES */
+        .section { padding: 5rem 4rem; max-width: 1100px; margin: 0 auto; }
+        h2 { font-size: 1.8rem; margin-bottom: 3rem; color: var(--navy); border-left: 4px solid var(--gold); padding-left: 1rem; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .cap-box { margin-bottom: 2rem; }
+        .cap-box h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy); text-transform: uppercase; }
+        .cap-box p { color: var(--gray); font-size: 0.95rem; }
+
+        /* FORM */
+        .form-section { background: var(--navy); color: var(--white); padding: 5rem 4rem; }
+        .form-container { max-width: 600px; margin: 0 auto; }
+        .form-container h2 { color: var(--white); border-left: 4px solid var(--gold); }
+        form { display: grid; gap: 1.5rem; margin-top: 2rem; }
+        input, select, textarea { width: 100%; padding: 1rem; border: none; font-family: 'Inter', sans-serif; }
+        .submit-btn { background: var(--gold); color: var(--navy); padding: 1rem; border: none; font-weight: 700; text-transform: uppercase; cursor: pointer; }
+
+        /* SIGNATORY */
+        .signatory { background: var(--off-white); }
+        .sig-list { list-style: none; }
+        .sig-list li { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+        .sig-list li b { display: block; color: var(--navy); text-transform: uppercase; font-size: 0.9rem; }
+
+        footer { background: #071224; color: rgba(255,255,255,0.5); padding: 2rem 4rem; text-align: center; font-size: 0.8rem; }
+
+        @media (max-width: 768px) {
+            nav, .hero, .logic-bar, .section, .form-section { padding: 2rem; }
+            .logic-grid, .grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Ascent Mission Assurance LLC</div>
+    <a href="#engage" class="nav-btn">Initiate Engagement</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-inner">
+        <h1>Securing Flight Readiness.<br>Eliminating Regulatory Risk.</h1>
+        <p class="hero-sub">Strategic Program Oversight and Independent Mission Assurance for High-Stakes Aerospace Operations.</p>
+    </div>
+</section>
+
+<section class="logic-bar">
+    <div class="logic-grid">
+        <div class="logic-item"><b>$0.00</b><span>Lost to Non-Conformance</span></div>
+        <div class="logic-item"><b>10+</b><span>Years Flight Hardware Experience</span></div>
+        <div class="logic-item"><b>2</b><span>Major Commercial Space Programs</span></div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Core Competencies</h2>
+    <div class="grid">
+        <div class="cap-box">
+            <h3>Critical Path Mission Assurance</h3>
+            <p>End-to-end oversight of flight hardware integration. Systematic risk identification across the critical path to prevent schedule-breaking failures before they propagate.</p>
+        </div>
+        <div class="cap-box">
+            <h3>Regulatory Defense & Audit Readiness</h3>
+            <p>Pre-audit gap analysis and documentation hardening against FAA, NASA, and AS9100 requirements. Build a standing posture of defensible compliance.</p>
+        </div>
+        <div class="cap-box">
+            <h3>Aviation Asset Integrity</h3>
+            <p>MRO oversight for certificated aircraft. FAA IA authority applied to airworthiness decisions and return-to-service determinations.</p>
+        </div>
+        <div class="cap-box">
+            <h3>Strategic Proposal Engineering</h3>
+            <p>Technical volume development for government and commercial aerospace proposals. Positioning organizations as the low-risk choice through rigorous technical narratives.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section signatory">
+    <h2>Authorized Signatory & SME Status</h2>
+    <ul class="sig-list">
+        <li><b>FAA IA</b> Federally authorized signatory for airworthiness certification and major repair approval.</li>
+        <li><b>NASA-STD-8739.4</b> Subject Matter Expert in workmanship standards for crewed and uncrewed flight hardware.</li>
+        <li><b>AS9100 Systems</b> Operational command of QMS documentation and hardening systems for source inspections.</li>
+    </ul>
+    <div style="margin-top: 3rem;">
+        <p><strong>Built on Flight Hardware Reality:</strong> Led Mission Assurance from 2014 through 2024 for Tier-1 Commercial Space launches. During that decade, zero non-conformances resulted in launch delays or mission compromise.</p>
+    </div>
+</section>
+
+<section class="form-section" id="engage">
+    <div class="form-container">
+        <h2>Submit Engagement Inquiry</h2>
+        <p>All technical data is handled with strict confidentiality.</p>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Full Name & Title" required>
+            <input type="text" name="org" placeholder="Organization" required>
+            <select name="type">
+                <option value="risk">Program Risk Assessment</option>
+                <option value="audit">Audit Readiness</option>
+                <option value="asset">Asset Oversight</option>
+                <option value="proposal">Proposal Support</option>
+            </select>
+            <textarea name="message" rows="5" placeholder="Brief Mission Description"></textarea>
+            <button type="submit" class="submit-btn">Request Technical Consultation</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Ascent Mission Assurance LLC | Merritt Island, Florida | Regulatory Defense & Mission Success
+</footer>
+
+</body>
+</html>
