@@ -3,147 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ascent Mission Assurance LLC | Aerospace Program Oversight</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Ascent Mission Assurance LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --navy: #0d1f3c;
-            --gold: #b8860b;
+            --navy: #0a192f;
+            --gold: #c59d3f;
             --white: #ffffff;
-            --off-white: #f8f9fa;
-            --text: #1a1a1a;
-            --gray: #4a4a4a;
-            --border: #d8d4cc;
+            --slate: #112240;
+            --text-dim: rgba(255, 255, 255, 0.6);
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; background: var(--white); }
-        h1, h2, .logo { font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--navy); color: var(--white); line-height: 1.6; }
         
-        /* HEADER */
-        nav { background: var(--navy); padding: 1.5rem 4rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--gold); }
-        .logo { color: var(--white); font-size: 1.2rem; font-weight: 700; }
-        .nav-btn { background: var(--gold); color: var(--navy); padding: 0.8rem 1.5rem; text-decoration: none; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
+        /* HEADER - CLEAN & BOLD */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 4rem; background: var(--navy); border-bottom: 1px solid rgba(197, 157, 63, 0.2); position: sticky; top: 0; z-index: 100; }
+        .logo-wrap { display: flex; flex-direction: column; }
+        .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; letter-spacing: 3px; line-height: 1; }
+        .logo-sub { font-size: 0.65rem; letter-spacing: 1.5px; color: var(--gold); text-transform: uppercase; margin-top: 4px; }
+        .nav-cta { border: 1px solid var(--gold); color: var(--gold); padding: 0.7rem 1.2rem; text-decoration: none; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
 
-        /* HERO */
-        .hero { background: var(--navy); color: var(--white); padding: 6rem 4rem; text-align: left; }
-        .hero-inner { max-width: 1100px; margin: 0 auto; }
-        h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 1.5rem; }
-        .hero-sub { font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 700px; margin-bottom: 2rem; }
+        /* HERO - TEXT FOCUS */
+        .hero { padding: 8rem 4rem; max-width: 1200px; margin: 0 auto; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; }
+        .eyebrow { color: var(--gold); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 1.5rem; display: block; }
+        h1 { font-family: 'Montserrat', sans-serif; font-size: 4.5rem; font-weight: 800; line-height: 0.95; letter-spacing: -1px; text-transform: uppercase; margin-bottom: 2rem; }
+        h1 span { color: var(--gold); }
+        .hero-desc { font-size: 1.1rem; color: var(--text-dim); max-width: 550px; margin-bottom: 3rem; }
+        
+        /* ACTION BUTTON */
+        .primary-btn { background: var(--gold); color: var(--navy); padding: 1.2rem 2.5rem; text-decoration: none; font-weight: 800; text-transform: uppercase; font-size: 0.9rem; display: inline-block; transition: 0.3s; border: none; }
+        .primary-btn:hover { background: var(--white); }
 
-        /* LOGIC BAR */
-        .logic-bar { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 3rem 4rem; }
-        .logic-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        .logic-item b { font-size: 2.5rem; color: var(--navy); display: block; }
-        .logic-item span { font-size: 0.9rem; text-transform: uppercase; color: var(--gray); font-weight: 600; }
+        /* LOGIC BAR - DATA */
+        .stats-section { background: var(--slate); padding: 5rem 4rem; border-top: 1px solid rgba(197, 157, 63, 0.2); }
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .stat-item b { font-size: 3.5rem; display: block; color: var(--gold); font-family: 'Montserrat'; line-height: 1; margin-bottom: 0.5rem; }
+        .stat-item span { font-size: 0.8rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; display: block; }
+        .stat-sub { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; display: block; }
 
-        /* CAPABILITIES */
-        .section { padding: 5rem 4rem; max-width: 1100px; margin: 0 auto; }
-        h2 { font-size: 1.8rem; margin-bottom: 3rem; color: var(--navy); border-left: 4px solid var(--gold); padding-left: 1rem; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
-        .cap-box { margin-bottom: 2rem; }
-        .cap-box h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--navy); text-transform: uppercase; }
-        .cap-box p { color: var(--gray); font-size: 0.95rem; }
+        /* CONTENT SECTIONS */
+        .section { padding: 8rem 4rem; max-width: 1200px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid rgba(255,255,255,0.1); }
+        .card { padding: 4rem; border: 1px solid rgba(255,255,255,0.1); }
+        .card.alt { background: rgba(255,255,255,0.02); }
+        .card h3 { color: var(--gold); text-transform: uppercase; font-size: 1rem; margin-bottom: 1rem; font-family: 'Montserrat'; }
+        .card p { color: var(--text-dim); font-size: 0.95rem; }
 
         /* FORM */
-        .form-section { background: var(--navy); color: var(--white); padding: 5rem 4rem; }
-        .form-container { max-width: 600px; margin: 0 auto; }
-        .form-container h2 { color: var(--white); border-left: 4px solid var(--gold); }
-        form { display: grid; gap: 1.5rem; margin-top: 2rem; }
-        input, select, textarea { width: 100%; padding: 1rem; border: none; font-family: 'Inter', sans-serif; }
-        .submit-btn { background: var(--gold); color: var(--navy); padding: 1rem; border: none; font-weight: 700; text-transform: uppercase; cursor: pointer; }
+        .form-area { background: var(--slate); padding: 8rem 4rem; border-top: 2px solid var(--gold); }
+        form { max-width: 600px; margin: 0 auto; display: grid; gap: 1.5rem; }
+        input, select, textarea { width: 100%; padding: 1.2rem; background: var(--navy); border: 1px solid #233554; color: white; font-family: inherit; }
+        
+        footer { padding: 4rem; text-align: center; font-size: 0.7rem; color: var(--text-dim); letter-spacing: 1px; border-top: 1px solid rgba(255,255,255,0.1); }
 
-        /* SIGNATORY */
-        .signatory { background: var(--off-white); }
-        .sig-list { list-style: none; }
-        .sig-list li { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
-        .sig-list li b { display: block; color: var(--navy); text-transform: uppercase; font-size: 0.9rem; }
-
-        footer { background: #071224; color: rgba(255,255,255,0.5); padding: 2rem 4rem; text-align: center; font-size: 0.8rem; }
-
-        @media (max-width: 768px) {
-            nav, .hero, .logic-bar, .section, .form-section { padding: 2rem; }
-            .logic-grid, .grid { grid-template-columns: 1fr; }
-            h1 { font-size: 2rem; }
+        @media (max-width: 900px) {
+            h1 { font-size: 3rem; }
+            .stats-grid, .grid { grid-template-columns: 1fr; }
+            nav { padding: 1rem 2rem; }
         }
     </style>
 </head>
 <body>
 
 <nav>
-    <div class="logo">Ascent Mission Assurance LLC</div>
-    <a href="#engage" class="nav-btn">Initiate Engagement</a>
+    <div class="logo-wrap">
+        <div class="logo-text">ASCENT</div>
+        <div class="logo-sub">Mission Assurance LLC</div>
+    </div>
+    <a href="#contact" class="nav-cta">Request Assessment</a>
 </nav>
 
 <section class="hero">
-    <div class="hero-inner">
-        <h1>Securing Flight Readiness.<br>Eliminating Regulatory Risk.</h1>
-        <p class="hero-sub">Strategic Program Oversight and Independent Mission Assurance for High-Stakes Aerospace Operations.</p>
+    <span class="eyebrow"> Certified · Mission-Critical</span>
+    <h1>Securing<br>Flight Readiness.<br><span>Eliminating<br>Regulatory Risk.</span></h1>
+    <p class="hero-desc"> Mission Assurance and Program Oversight for High-Stakes Aerospace Operations.</p>
+    <div>
+        <a href="#contact" class="primary-btn">Request a Program Risk Assessment</a>
     </div>
 </section>
 
-<section class="logic-bar">
-    <div class="logic-grid">
-        <div class="logic-item"><b>$0.00</b><span>Lost to Non-Conformance</span></div>
-        <div class="logic-item"><b>10+</b><span>Years Flight Hardware Experience</span></div>
-        <div class="logic-item"><b>2</b><span>Major Commercial Space Programs</span></div>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Core Competencies</h2>
-    <div class="grid">
-        <div class="cap-box">
-            <h3>Critical Path Mission Assurance</h3>
-            <p>End-to-end oversight of flight hardware integration. Systematic risk identification across the critical path to prevent schedule-breaking failures before they propagate.</p>
+<section class="stats-section">
+    <div class="stats-grid">
+        <div class="stat-item">
+            <b>$0.00</b>
+            <span>Lost to Non-Conformance</span>
+            <span class="stat-sub">Zero-defect delivery record</span>
         </div>
-        <div class="cap-box">
+        <div class="stat-item">
+            <b>10+</b>
+            <span>Years Flight Experience</span>
+            <span class="stat-sub">Tier-1 aerospace programs</span>
+        </div>
+        <div class="stat-item">
+            <b>2</b>
+            <span>Major Space Programs</span>
+            <span class="stat-sub">Mission-critical oversight</span>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="capabilities">
+    <h2 style="font-family: Montserrat; text-transform: uppercase; margin-bottom: 3rem; font-size: 2.5rem;">Core Capabilities</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Critical Path Mission Assurance</h3>
+            <p>End-to-end oversight of flight hardware integration, from design reviews to final acceptance testing. Systematic risk identification and mitigation across the critical path.</p>
+        </div>
+        <div class="card alt">
             <h3>Regulatory Defense & Audit Readiness</h3>
             <p>Pre-audit gap analysis and documentation hardening against FAA, NASA, and AS9100 requirements. Build a standing posture of defensible compliance.</p>
         </div>
-        <div class="cap-box">
+        <div class="card alt">
             <h3>Aviation Asset Integrity</h3>
-            <p>MRO oversight for certificated aircraft. FAA IA authority applied to airworthiness decisions and return-to-service determinations.</p>
+            <p>MRO oversight for certificated aircraft. FAA IA authority applied to complex airworthiness decisions and return-to-service determinations.</p>
         </div>
-        <div class="cap-box">
+        <div class="card">
             <h3>Strategic Proposal Engineering</h3>
-            <p>Technical volume development for government and commercial aerospace proposals. Positioning organizations as the low-risk choice through rigorous technical narratives.</p>
+            <p>Technical volume development for government and commercial aerospace proposals. Position your organization as the low-risk, high-credibility choice.</p>
         </div>
     </div>
 </section>
 
-<section class="section signatory">
-    <h2>Authorized Signatory & SME Status</h2>
-    <ul class="sig-list">
-        <li><b>FAA IA</b> Federally authorized signatory for airworthiness certification and major repair approval.</li>
-        <li><b>NASA-STD-8739.4</b> Subject Matter Expert in workmanship standards for crewed and uncrewed flight hardware.</li>
-        <li><b>AS9100 Systems</b> Operational command of QMS documentation and hardening systems for source inspections.</li>
-    </ul>
-    <div style="margin-top: 3rem;">
-        <p><strong>Built on Flight Hardware Reality:</strong> Led Mission Assurance from 2014 through 2024 for Tier-1 Commercial Space launches. During that decade, zero non-conformances resulted in launch delays or mission compromise.</p>
-    </div>
-</section>
-
-<section class="form-section" id="engage">
-    <div class="form-container">
-        <h2>Submit Engagement Inquiry</h2>
-        <p>All technical data is handled with strict confidentiality.</p>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Full Name & Title" required>
-            <input type="text" name="org" placeholder="Organization" required>
-            <select name="type">
-                <option value="risk">Program Risk Assessment</option>
-                <option value="audit">Audit Readiness</option>
-                <option value="asset">Asset Oversight</option>
-                <option value="proposal">Proposal Support</option>
-            </select>
-            <textarea name="message" rows="5" placeholder="Brief Mission Description"></textarea>
-            <button type="submit" class="submit-btn">Request Technical Consultation</button>
-        </form>
-    </div>
+<section class="form-area" id="contact">
+    <form action="#" method="POST">
+        <h2 style="text-align: center; font-size: 1.5rem; text-transform: uppercase; font-family: Montserrat; margin-bottom: 1rem;">Submit Engagement Inquiry</h2>
+        <p style="text-align: center; color: var(--text-dim); margin-bottom: 2rem;">All technical data is handled with strict confidentiality.</p>
+        <input type="text" name="name" placeholder="Full Name & Title" required>
+        <input type="text" name="org" placeholder="Organization" required>
+        <select name="service">
+            <option>Program Risk Assessment</option>
+            <option>Audit Readiness</option>
+            <option>Asset Oversight</option>
+            <option>Proposal Support</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Brief Mission Description..."></textarea>
+        <button type="submit" class="primary-btn">Initiate Technical Consultation</button>
+    </form>
 </section>
 
 <footer>
-    © 2026 Ascent Mission Assurance LLC | Merritt Island, Florida | Regulatory Defense & Mission Success
+    © 2026 ASCENT MISSION ASSURANCE LLC 
 </footer>
 
 </body>
