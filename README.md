@@ -40,5 +40,6 @@ SMEs manage 34% of market demand but often lack internal mission assurance staff
 ---
 
 ## Protect Your Certificate Today
-*   [**Download our FAA Part 5 / Part 145 Gap Checklist**](./Gap_Checklist.pdf)
+*   [**Download our [Technical Audit Readiness Compliance Gap Checklist.pdf](https://github.com/user-attachments/files/26977807/Technical.Audit.Readiness.Compliance.Gap.Checklist.pdf)
+r FAA Part 5 / Part 145 Gap Checklist**](./Gap_Checklist.pdf)
 *   **Book a 2-Day "Severity Level 3" Health Check:** We identify the risks that lead to license denial or $50,000+ fines before the FAA finds them [11, 12].
