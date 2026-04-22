@@ -21,19 +21,19 @@ Safety data is now too voluminous for manual tracking. We provide:
 **FOIA-Resistant Safety Governance.**
 A major barrier to safety is that "Open Record" laws can expose hazard reporters to legal discovery [7, 8]. We offer:
 *   **Data Governance:** Designing reporting workflows that isolate sensitive safety data from public disclosure.
-*   **Technical Mediation:** Using Certified Mediation to resolve cross-functional friction and build a non-punitive culture that survives legal scrutiny [User Summary].
+*   **Technical Mediation:** Using Certified Mediation to resolve cross-functional friction and build a non-punitive culture that survives legal scrutiny.
 
 ### 3. "High-Cadence" Mission Assurance (Fractional SME)
 **SpaceX-Level Rigor for Startups and SMEs.**
 SMEs manage 34% of market demand but often lack internal mission assurance staff [9, 10]. We provide:
-*   **NASA-Grade Technical Oversight:** Subject Matter Expertise in **NASA-STD-8739.4** and **J-STD-001** to prevent "Severity Level 3" violations [User Summary].
+*   **NASA-Grade Technical Oversight:** Subject Matter Expertise in **NASA-STD-8739.4** and **J-STD-001** to prevent "Severity Level 3" violations.
 *   **Audit-Ready MRO Support:** Specialized oversight for Part 145 stations to manage the 3,000+ maintenance records required annually.
 
 ---
 
 ## Why Ascent?
 **Elite Pedigree. Proven Results.**
-*   **10+ Years of High-Stakes Leadership:** Directly managed mission assurance for **SpaceX Starship** and **Blue Origin New Glenn** [User Summary].
+*   **15+ Years of High-Stakes Leadership:** Directly managed mission assurance 
 *   **Zero Non-Conformance Record:** Delivered 100% compliance under the world's most aggressive prototyping cadences.
 *   **Certified Authority:** FAA A&P licensed, NASA Fiber Optics SME, and Certified Mediator.
 
